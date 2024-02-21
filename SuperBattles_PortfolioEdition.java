@@ -331,11 +331,11 @@ public class SuperBattles_PortfolioEdition implements MouseListener
             g.drawLine(100*i,0,100*i,231);}
             
          try{
-         deckBack = ImageIO.read(new File("Photos/cardback"+backType+".jpg"));
+         deckBack = ImageIO.read(new File("Assets/cardback"+backType+".jpg"));
          g.drawImage(deckBack,1033,347,null);
          }catch(IOException io)
          {
-            System.out.println("Error: DBI404: The specified deck-back image could not be found.");
+            System.out.println("Error: The specified deck-back image could not be found.");
          }
          
          drawPlayer(g,p2,500,0);
