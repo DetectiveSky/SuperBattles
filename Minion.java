@@ -34,9 +34,9 @@ public class Minion
       dark=false;
       holy=false;
       try{
-      pic=ImageIO.read(new File("Photos/"+name.toLowerCase()+".jpg"));
+      pic=ImageIO.read(new File("assets/"+name.toLowerCase()+".jpg"));
       }catch(IOException io)
-      {System.out.println("Error, 404: The requested image could not be found.");
+      {System.out.println("Error: The requested image could not be found.");
       }
    }
    public Minion (Card c)

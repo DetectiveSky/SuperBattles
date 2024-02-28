@@ -34,9 +34,9 @@ public class Card
       bk=n;
       dw=n;
       try{
-      pic=ImageIO.read(new File("Photos/"+name.toLowerCase()+".jpg"));
+      pic=ImageIO.read(new File("Assets/"+name.toLowerCase()+".jpg"));
       }catch(IOException io)
-      {System.out.println("Error, 404: The requested image could not be found.");
+      {System.out.println("Error: The requested image could not be found.");
       }
    }
    
