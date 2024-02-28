@@ -1,6 +1,8 @@
 # SuperBattles
 
-SuperBattles is a program written in Java, intended as a card game in a similar vein to Activision-Blizzard's Hearthstone. The project was written by myself between late 2017 and early- to mid-2018 as the final assignment for a computer science course in high school. 
+SuperBattles is a program written in Java, intended as a card game in a similar vein to Activision-Blizzard's Hearthstone. The project was written by myself between late 2017 and early- to mid-2018 as the final assignment for a computer science course in high school.
+
+![A screenshot of the program window mid-game.](Assets/screenshot.png)
 
 It tested my skills at the time, consisting of loading files, opening windows and drawing objects at a scale I had never done before. Several extra files were created as libraries, and the final version even included background music (which has since stopped working, pending repair), and extra cards from intellectual properties I enjoyed consuming at the time (which have been removed, without plans for replacement).
 
