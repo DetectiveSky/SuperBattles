@@ -185,7 +185,7 @@ public class SuperBattles implements MouseListener
       
       for (int i = 0; i<5;i++)
       {
-         deck[i] = new Card (1,"Centurion","LEGIO XX V V\n",1,"Minion",0.01);
+         deck[i] = new Card (1,"Centurion","Senatus Populusque Romani!\n",1,"Minion",0.01);
          deck[i].setFXD("Ready Stance");
          deck[i].setReady(true);
          deck[i].setMinionStats (1,1);
@@ -193,7 +193,7 @@ public class SuperBattles implements MouseListener
       deckPosTrack+=5;
       for (int i = deckPosTrack; i<deckPosTrack+5;i++)
       {
-         deck[i] = new Card (2,"Knight","DEVS VVLT",1,"Minion",0.02);
+         deck[i] = new Card (2,"Knight","DEVS VVLT\n",1,"Minion",0.02);
          deck[i].setFXD("Ready Stance");
          deck[i].setReady(true);
          deck[i].setMinionStats (2,1);
@@ -234,7 +234,7 @@ public class SuperBattles implements MouseListener
       deckPosTrack+=5;
       for (int i = deckPosTrack; i<deckPosTrack+3;i++)
       {
-         deck[i] = new Card (7,"Tank 1918","Mediumunumicus est optimus\n",7,"Minion",0.07);
+         deck[i] = new Card (7,"Tank 1918","",7,"Minion",0.07);
          deck[i].setFXD("");
          deck[i].setReady(false);
          deck[i].setMinionStats (4,5);
@@ -258,7 +258,7 @@ public class SuperBattles implements MouseListener
       deckPosTrack+=3;
       deck[deckPosTrack]= new Card(10,"Drone","Watch out for falcons!\n",2,"Minion",0.10);
       deck[deckPosTrack++].setMinionStats (3,2);
-      deck[deckPosTrack]= new Card(11,"Apache Heli","\"I identify as an Apache attack helicopter.\"\n",7,"Minion",0.11);
+      deck[deckPosTrack]= new Card(11,"Attack Heli","soi soi soi soi soi\n",7,"Minion",0.11);
       deck[deckPosTrack].setMinionStats (6,6);
       deck[deckPosTrack].setReady(false);
       deck[deckPosTrack++].setFXD("");
@@ -266,16 +266,16 @@ public class SuperBattles implements MouseListener
       deck[deckPosTrack].setMinionStats (8,7);
       deck[deckPosTrack].setReady(false);
       deck[deckPosTrack++].setFXD("Ready Stance");
-      deck[deckPosTrack]= new Card(13,"Zeus","Don't make him angry.\n",10,"Minion",0.13);
+      deck[deckPosTrack]= new Card(13,"Zeus","Lord of the Sky\n",10,"Minion",0.13);
       deck[deckPosTrack].setMinionStats (14,15);
       deck[deckPosTrack].setMinionExFX(13,13);
       deck[deckPosTrack].setBlessings(false,true);
       deck[deckPosTrack++].setFXD("Deity");
-      deck[deckPosTrack]= new Card(14,"Poseidon","Thrice he could not endure the heat.",9,"Minion",0.14);
+      deck[deckPosTrack]= new Card(14,"Poseidon","Lord of the Seas\n",9,"Minion",0.14);
       deck[deckPosTrack].setMinionStats (14,13);
       deck[deckPosTrack].setBlessings(false,true);
       deck[deckPosTrack++].setFXD("Deity");
-      deck[deckPosTrack]= new Card(15,"Hades","It's pronounced \"HAY-deez\", not \"haydz\".\n",10,"Minion",0.15);
+      deck[deckPosTrack]= new Card(15,"Hades","Lord of the Underworld\n",10,"Minion",0.15);
       deck[deckPosTrack].setMinionStats (11,11);
       deck[deckPosTrack].setMinionExFX(15,15);
       deck[deckPosTrack].setBlessings(true,true);
@@ -727,16 +727,6 @@ public class SuperBattles implements MouseListener
                         boardUse1=l;
                      }
                      board[j][boardUse1]=new Minion(16,"Machine Gun","Pewpewpew!",5,1);
-                  }
-                  else if (board[j][i].dw==34)
-                  {
-                     for(int l=0;l<7;l++)
-                     {
-                        if(board[j][l]==null)
-                        boardUse1=l;
-                     }
-                     board[j][boardUse1]=new Minion(34,"Vegetal","Did someone said NO VEGETALS?",2,5);
-                     board[j][boardUse1].setExFX(34,"Regenerate",0,null);
                   }
                   board[j][i]=null;
                }
