@@ -151,7 +151,7 @@ public class SuperBattles implements MouseListener
       if(p==p1)
       {stamMax++;
       p1.stamina=stamMax;
-      p2.stamina=stamMax;}
+      p2.stamina=stamMax+1;}
       for(int i=0;i<7;i++)
       {
          for(int j=0;j<2;j++)
