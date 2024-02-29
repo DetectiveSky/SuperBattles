@@ -55,6 +55,7 @@ public class SuperBattles implements MouseListener
    SBRun gamex = new SBRun();
    AudioClip music;
    String results = "";
+   int stamMax=0;
    
    public SuperBattles ()
    {//This constructor sets up all upon-startup initializations.
@@ -79,7 +80,7 @@ public class SuperBattles implements MouseListener
 
       backType=Integer.parseInt(cbn.getText().trim());
       try{
-      music=Applet.newAudioClip(new URL(""));
+      music=Applet.newAudioClip(new URL("https://www.youtube.com/watch?v=gKD-XRSm8YA"));
       music.loop();
       }catch(MalformedURLException mue)
       {System.out.println("Error: The music URL does not work.");
@@ -148,8 +149,9 @@ public class SuperBattles implements MouseListener
       p1.handClosed=true;
       p2.handClosed=true;
       if(p==p1)
-      {p1.stamina=p1.hp/2;
-      p2.stamina=p2.hp/2;}
+      {stamMax++;
+      p1.stamina=stamMax;
+      p2.stamina=stamMax;}
       for(int i=0;i<7;i++)
       {
          for(int j=0;j<2;j++)

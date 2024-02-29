@@ -13,7 +13,7 @@ public class Player
    {
       hp = 20;
       hand = new Card[5];
-      stamina=hp/2;
+      stamina=1;
    }
    
    public void drawCard (Card[] deck, int dD)
